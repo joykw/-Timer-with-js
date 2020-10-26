@@ -1,0 +1,46 @@
+body {
+    background-color: rgba(0,0,0,0.7);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer {
+    display: flex;
+    width: auto;
+    align-items: center;
+    min-height: 20em;
+    background-color: aqua;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.display {
+    display: flex;
+    font-size: 7em;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 4em;
+    font-size: 4em;
+    margin: 0.1em;
+    font-family: "Helvetica Neue", serif;
+    appearance: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background-color: lightcoral;
+
+
+}

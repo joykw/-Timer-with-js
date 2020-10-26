@@ -52,11 +52,14 @@ class Timer{
     }
 
     tick(){
-
-        this.timeLeft -= 1;
+if(this.timeLeft === 0){
+    this.stop();
+}else {
+    this.timeLeft -= 1;
         this.render();
-
-    }
+    }     
+}
+    
     pad(num){
         if(num < 10){
             return  `0${num}`;
@@ -65,13 +68,11 @@ class Timer{
         }
     }
 }
-console.log(new Timer('#timer'));
-new Timer('#timer2')
+console.log(new Timer('#timer', 0, 5));
 
 
 
-
-
+// new Timer('#timer2')
 //Data and Variables
 // let timer;
 // let oldTime;
