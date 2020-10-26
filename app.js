@@ -66,6 +66,7 @@ class Timer{
     }
 }
 console.log(new Timer('#timer'));
+new Timer('#timer2')
 
 
 
